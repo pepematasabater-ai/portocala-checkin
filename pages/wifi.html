@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>WiFi</title>
+
+<link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+
+<div class="contenedor">
+
+<div class="tarjeta">
+
+<img src="../images/logo.png"
+class="logo"
+alt="Portocala Apartments">
+
+<h1>📶 WiFi</h1>
+
+<p class="descripcion">
+
+Conecta tu dispositivo utilizando estos datos.
+
+</p>
+
+<div class="wifi-card">
+
+    <h2>Nombre de la red</h2>
+
+    <div class="dato">
+
+        <span id="nombreWifi">PORTOCALA_APARTMENTS</span>
+
+        <button class="copiar" onclick="copiar('nombreWifi')">
+
+            📋 Copiar
+
+        </button>
+
+    </div>
+
+    <h2>Contraseña</h2>
+
+    <div class="dato">
+
+        <span id="passwordWifi">8GmT4#29Lp</span>
+
+        <button class="copiar" onclick="copiar('passwordWifi')">
+
+            📋 Copiar
+
+        </button>
+
+    </div>
+
+</div>
+
+<p id="mensajeCopiado" class="mensaje-copiado">
+
+</p>
+
+<a class="boton-secundario"
+href="area-huesped.html">
+
+← Volver
+
+</a>
+
+</div>
+
+</div>
+
+<script src="../js/wifi.js"></script>
+
+</body>
+
+</html>
