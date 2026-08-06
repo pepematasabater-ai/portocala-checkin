@@ -1,4 +1,4 @@
-const urlFormulario = "https://tally.so/r/D4oqWE";
+const urlFormulario = "https://tally.so/r/7RYpjR";
 
 function abrirFormulario(event){
 
