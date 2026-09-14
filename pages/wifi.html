@@ -16,69 +16,78 @@
 
 <div class="contenedor">
 
-<div class="tarjeta">
+    <div class="tarjeta">
 
-<img src="../images/logo.png"
-class="logo"
-alt="Portocala Apartments">
+        <img src="../images/logo.png" class="logo" alt="Portocala Apartments">
 
-<h1>📶 WiFi</h1>
+        <p class="saludo wifi-saludo">
+            <i data-lucide="wifi"></i>
+            WiFi
+        </p>
 
-<p class="descripcion">
+        <h2 id="nombre-apartamento">
+            Apartamento
+        </h2>
 
-Conecta tu dispositivo utilizando estos datos.
+        <p class="descripcion">
+            Conéctate fácilmente a la red WiFi de tu alojamiento.
+        </p>
 
-</p>
+        <div class="wifi-card">
 
-<div class="wifi-card">
+            <h3>Nombre de la red</h3>
 
-    <h2>Nombre de la red</h2>
+            <div class="wifi-dato">
 
-    <div class="dato">
+                <span id="wifi-ssid">
+                    Cargando...
+                </span>
 
-        <span id="nombreWifi">PORTOCALA_APARTMENTS</span>
+                <button onclick="copiar('wifi-ssid')">
+                    Copiar
+                </button>
 
-        <button class="copiar" onclick="copiar('nombreWifi')">
+            </div>
 
-            📋 Copiar
+            <h3>Contraseña</h3>
 
-        </button>
+            <div class="wifi-dato">
+
+                <span id="wifi-password">
+                    ••••••••
+                </span>
+
+                <button id="mostrar-password">
+                    Mostrar
+                </button>
+
+            </div>
+
+            <button id="copiar-password" class="boton-principal" onclick="copiarPassword()">
+                 Copiar contraseña
+            </button>
+
+            <p id="mensajeCopiado" class="mensaje-copiado"></p>
+
+        </div>
+
+        <a class="volver-menu" href="area-huespedes.html">
+            ← Volver al menú
+        </a>
 
     </div>
 
-    <h2>Contraseña</h2>
-
-    <div class="dato">
-
-        <span id="passwordWifi">8GmT4#29Lp</span>
-
-        <button class="copiar" onclick="copiar('passwordWifi')">
-
-            📋 Copiar
-
-        </button>
-
-    </div>
-
 </div>
 
-<p id="mensajeCopiado" class="mensaje-copiado">
+<script src="https://unpkg.com/lucide@latest"></script>
 
-</p>
+<script>
+lucide.createIcons();
+</script>
 
-<a class="boton-secundario"
-href="area-huesped.html">
-
-← Volver
-
-</a>
-
-</div>
-
-</div>
-
+<script src="../js/config.js"></script>
+<script src="../js/apartamentos.js"></script>
+<script src="../js/app.js"></script>
 <script src="../js/wifi.js"></script>
 
 </body>
-
-</html>

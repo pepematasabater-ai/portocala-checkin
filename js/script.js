@@ -17,3 +17,19 @@ function abrirFormulario(event){
     },600);
 
 }
+// ========================================
+// ACCESO AL ÁREA DE HUÉSPEDES
+// ========================================
+
+const parametros = new URLSearchParams(window.location.search);
+
+const apartamentoID = parametros.get("apartamento");
+
+const botonHuespedes = document.getElementById("botonHuespedes");
+
+if (botonHuespedes && apartamentoID) {
+
+    botonHuespedes.href =
+    `pages/area-huesped.html?apartamento=${apartamentoID}`;
+
+}
