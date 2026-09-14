@@ -34,7 +34,10 @@ function copiar(id) {
 // INFORMACIÓN WIFI DEL APARTAMENTO
 // ========================================
 
-const datosWifi = apartamento.wifi;
+const datosWifi = {
+    ssid: "PORTOCALA_WIFI",
+    password: "AQUÍ_TU_CONTRASEÑA"
+};
 
 // Mostrar nombre de la red
 const elementoSSID = document.getElementById("wifi-ssid");
